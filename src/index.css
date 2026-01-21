@@ -1,5 +1,6 @@
 html, body {
   margin: 0;
+  font-family: inter;
 }
 
 .header{
@@ -7,14 +8,81 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 3.44rem;
+  height: 55px;
+    color: #ffffff;
 }
 
-.globe {
+.header img {
   width: 1.5rem;
 }
 
-.header span {
-  color: #ffffff;
+.header h1 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: inter;
   margin-left: 10px;
+}
+
+main {
+  margin: 6rem;
+}
+
+.container{
+  display: flex;
+  position: relative;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 11rem;
+}
+
+.state {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.snapshot{
+  width: 10rem;
+  height: 15rem;
+  border-radius: 5px;
+  position: absolute;
+  top: -25px;
+}
+
+.details{
+  width: 14px;
+  height: 15px;
+}
+
+.container  span {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #2B283A;
+}
+
+.container  a{
+  color: #918E9B;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+time {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #2B283A;
+}
+
+p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #2B283A;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.56rem;
+  color: #2B283A;
 }
