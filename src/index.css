@@ -1,88 +1,88 @@
 html, body {
-  margin: 0;
-  font-family: inter;
+    margin: 0;
 }
 
-.header{
-  background: #F55A5A;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 55px;
-    color: #ffffff;
+body {
+    font-family: Inter;
 }
 
-.header img {
-  width: 1.5rem;
+.container {
+    margin: 45px 40px;
 }
 
-.header h1 {
-  font-size: 0.9rem;
-  font-weight: 500;
-  font-family: inter;
-  margin-left: 10px;
+header {
+    background: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 55px;
 }
 
-article {
-  margin: 6rem;
+header > img {
+    width: 24px;
+    margin-right: 7px;
 }
 
-.container{
-  display: flex;
-  position: relative;
+header > h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-.details-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-left: 11rem;
+article.journal-entry {
+    display: flex;
+    margin-bottom: 36px;
 }
 
-.state {
-  display: flex;
-  gap: 0.5rem;
+article.journal-entry .marker {
+    width: 7px;
+    margin-right: 4px;
 }
 
-.snapshot{
-  width: 10rem;
-  height: 15rem;
-  border-radius: 5px;
-  position: absolute;
-  top: -25px;
+article.journal-entry .main-image-container {
+    width: 125px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-right: 19px;
 }
 
-.details{
-  width: 14px;
-  height: 15px;
+article.journal-entry .main-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.container  span {
-  font-weight: 400;
-  font-size: 1rem;
-  color: #2B283A;
+.info-container span.country {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-right: 12px;
 }
 
-.container  a{
-  color: #918E9B;
-  font-weight: 400;
-  font-size: 1rem;
+.info-container a {
+    color: #2B283A;
+    font-size: 0.7rem;
 }
 
-time {
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: #2B283A;
+.info-container a:visited {
+    color: #918E9B;
 }
 
-p {
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: #2B283A;
+.info-container h2.entry-title {
+    margin-top: 7px;
+    margin-bottom: 17px;
 }
 
-h1 {
-  font-weight: 700;
-  font-size: 1.56rem;
-  color: #2B283A;
+.info-container p.trip-dates {
+    font-weight: bold;
+}
+
+.info-container p.entry-text {
+    line-height: 1.5;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
